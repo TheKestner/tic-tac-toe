@@ -1,5 +1,5 @@
 ##Main Goals: 
-Recreate tic tac Toe with Js
+Recreate tic tac Toe with Js:
 
 1. The HTML for the tic-tac-toe grid should be dynamically rendered in JS.
 2. Your code should incorporate the use of at least one Class 
@@ -15,5 +15,27 @@ b. Composite
 9. Use the symbols X and O.
 10. On each player’s turn, that player places one of their symbols on an unoccupied space by clicking.
 11. The game continues until one player places three symbols in a straight line (horizontal, vertical, or diagonal) and wins or there are no remaining available spaces and it is a draw.
+
+
+##pseudocode
+
+* Title
+* Dynamic 3x3 grid that is clickable
+* Grids should have the correct player symbol X or O
+* Restart button - resets state
+
+Dynamic Function to create 3x3 grid via javascript
+
+Board [
+    0,1,2
+    3,4,5
+    6,7,8
+]
+
+Win Conditions for each 
+[0,1,2] [3,4,5] [6,7,8]
+[0,3,6] [1,4,7] [2,5,8]
+[0,4,8] [2,4,6]
+
 
 
