@@ -21,9 +21,12 @@ b. Composite
 
 * Title
 * Dynamic 3x3 grid that is clickable
+ - event listener for each gird on board
 * Grids should have the correct player symbol X or O
 * Restart button - resets state
+  - event listener for Restart Button
 
+Onload for dynamic board
 Dynamic Function to create 3x3 grid via javascript
 
 Board [
@@ -37,5 +40,18 @@ Win Conditions for each
 [0,3,6] [1,4,7] [2,5,8]
 [0,4,8] [2,4,6]
 
+Current player switches between X and O
 
 
+Model:
+
+
+
+
+
+View:
+
+
+
+
+Controller:
