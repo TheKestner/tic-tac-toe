@@ -44,11 +44,14 @@ Current player switches between X and O
 
 
 Model:
-
-
+Board Array of 9x
+Win cond array of 8x 
+End game 
 
 
 View:
+init 
+render fn when onload on body
 
 
 
