@@ -44,16 +44,29 @@ Current player switches between X and O
 
 
 Model:
-Board Array of 9x
+Board Array of 9x : Each index empty? 
+
 Win cond array of 8x 
-End game 
+
+Current Player X
+
+End game true when win cond is reached 
 
 
 View:
-init 
-render fn when onload on body
 
+init 
+render fn onload on body when app/game loads
+
+Ids/display required for App/game
 
 
 
 Controller:
+
+fn to Handle current player change X | O | X | O  
+possibly done with string and innerHtml
+
+fn for button to restart game
+ 
+fn to handle 
