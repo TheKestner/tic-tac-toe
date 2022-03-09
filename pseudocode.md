@@ -56,10 +56,6 @@ Win cond array of 8x
 
 Current Player X
 
-End game true when win cond is reached 
-
-
-
 
 View:
 
@@ -69,6 +65,8 @@ render fn onload on body when app/game loads
 Ids/display required for App/game
 
 Display whos player turn it is 
+
+Display Winner message
 
 
 
@@ -82,3 +80,5 @@ fn for button to restart game
 fn to handle board space being click only once 
   board index = current player symbol
   remove event listener after symbol is shown 
+
+fn to end game when wincon is true
