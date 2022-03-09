@@ -2,7 +2,7 @@
 // let player = "X"
 
 
-
+//added board
 function addCell() {
  for (let i = 1; i <= 9; i++){
   let newDiv = document.createElement("div");
@@ -12,10 +12,15 @@ function addCell() {
  }
 }
 
+
+// newDiv.addEventListener("click", addCell());
+// console.log(newDiv)
+// newDiv.removeEventListener
+
 document.body.onload = addCell;
 
 
-// document.body.onload = grid;
+
 
 
 
