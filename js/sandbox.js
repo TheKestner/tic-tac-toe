@@ -1,25 +1,18 @@
 // let board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
 // let player = "X"
 
-document.body.onload = addCell;
+
 
 function addCell() {
  for (let i = 1; i <= 9; i++){
   let newDiv = document.createElement("div");
-
-  const newContent = document.createTextNode("X");
-
-  newDiv.appendChild(newContent);
-
-  let currentDiv = document.getElementById("grid");
-  document.body.insertBefore(newDiv, currentDiv);
+   newDiv.classList.add("cell");
+  let grid = document.getElementById("grid");
+   grid.appendChild(newDiv);
  }
 }
 
-
-
-
-
+document.body.onload = addCell;
 
 
 // document.body.onload = grid;
