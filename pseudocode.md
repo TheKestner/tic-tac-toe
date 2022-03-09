@@ -29,6 +29,9 @@ b. Composite
 Onload for dynamic board
 Dynamic Function to create 3x3 grid via javascript
 
+Container div cell with Id/index value for board 
+CSS for board ex style = 300pw 700px
+
 Board [
     0,1,2
     3,4,5
@@ -44,6 +47,9 @@ Current player switches between X and O
 
 
 Model:
+
+Class game/app for state
+
 Board Array of 9x : Each index empty? 
 
 Win cond array of 8x 
@@ -53,6 +59,8 @@ Current Player X
 End game true when win cond is reached 
 
 
+
+
 View:
 
 init 
@@ -60,13 +68,17 @@ render fn onload on body when app/game loads
 
 Ids/display required for App/game
 
+Display whos player turn it is 
+
 
 
 Controller:
 
-fn to Handle current player change X | O | X | O  
+fn to Handle current player change X | O | X | O 
 possibly done with string and innerHtml
 
 fn for button to restart game
  
-fn to handle 
+fn to handle board space being click only once 
+  board index = current player symbol
+  remove event listener after symbol is shown 
