@@ -7,3 +7,15 @@ function addCell() {
       grid.appendChild(newDiv);
     }
    }
+
+   document.addEventListener('click', event => {
+    const target = event.target
+    const isCell = target.classList.contains('cell')
+  
+  
+    if (isCell) {
+        console.log(true)
+    }
+  })
+
+  document.body.onload = addCell;
