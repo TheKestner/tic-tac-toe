@@ -1,7 +1,13 @@
 // let board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
-let player = "X";
+// let player = "X";
 // let player = "X" ? "O" : "X"
+class State {
+  constructor() {
+    this.player = "X";
+  }
+}
 
+let 
 // class state {
 //   constructor(){
 
