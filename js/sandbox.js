@@ -46,7 +46,7 @@ function addCell() {
      playerLabel.textContent = player;
     //  target.appendChild(playerLabel);
     playerChange();
-    })
+    }, { once: true });
  }
 }
 //document.getElementby 
