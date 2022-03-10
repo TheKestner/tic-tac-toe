@@ -9,13 +9,10 @@ function addCell() {
    }
 
    document.addEventListener('click', event => {
-    const target = event.target
-    const isCell = target.classList.contains('cell')
-  
-  
-    if (isCell) {
-        console.log(true)
-    }
+    const target = event.target;
+     let playerLabel = target;
+     playerLabel.textContent = player;
+     target.appendChild(playerLabel);
   })
 
   document.body.onload = addCell;

@@ -1,28 +1,30 @@
 // let board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
-// let player = "X"
-class state {
-  constructor(){
+let player = "X";
+// let player = "X" ? "O" : "X"
 
-  // let board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
-  // let player = "X"
+// class state {
+//   constructor(){
 
-  // Horizontal
-  winningStates: [
-  ['0', '1', '2'],
-  ['3', '4', '5'],
-  ['6', '7', '8'],
+//   // let board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
+//   // let player = "X"
 
-  // Vertical
-  ['0', '3', '6'],
-  ['1', '4', '7'],
-  ['2', '5', '8'],
+//   // Horizontal
+//   winningStates: [
+//   ['0', '1', '2'],
+//   ['3', '4', '5'],
+//   ['6', '7', '8'],
 
-  // Diagonal
-  ['0', '4', '8'],
-  ['2', '4', '6']
-  ]
- }
-}
+//   // Vertical
+//   ['0', '3', '6'],
+//   ['1', '4', '7'],
+//   ['2', '5', '8'],
+
+//   // Diagonal
+//   ['0', '4', '8'],
+//   ['2', '4', '6']
+//   ]
+//  }
+// }
 
 //added board
 function addCell() {
@@ -35,16 +37,20 @@ function addCell() {
 }
 
 document.addEventListener('click', event => {
-  const target = event.target
-  const isCell = target.classList.contains('cell')
-
-
-  if (isCell) {
-    console.log(true)
-  }
+  const target = event.target;
+   let playerLabel = target;
+   playerLabel.textContent = player;
+   target.appendChild(playerLabel);
 })
 
 document.body.onload = addCell;
+
+
+
+
+
+
+
 
 
 
