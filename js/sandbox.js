@@ -27,8 +27,9 @@ let player = "X";
 // }
 
 function playerChange() {
-  let player = player === "X" ? "O" : "X";
+  player = player === "X" ? "O" : "X";
 }
+
 
 
 //added board
@@ -44,6 +45,7 @@ function addCell() {
      let playerLabel = target;
      playerLabel.textContent = player;
     //  target.appendChild(playerLabel);
+    playerChange();
     })
  }
 }
