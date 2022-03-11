@@ -22,6 +22,7 @@ class State {
 
 let stateInstance = new State();
 
+let currentPlayer = document.getElementById("turn");
 
 
 function playerChange() {
@@ -29,7 +30,7 @@ function playerChange() {
   currentPlayer.textContent = `Current Player is ${stateInstance.player}`;
 }
 
-
+playerChange();
 
 //added board
 function addCell() {
