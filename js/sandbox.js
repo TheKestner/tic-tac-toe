@@ -7,7 +7,9 @@ class State {
   }
 }
 
-let 
+let stateInstance = new State();
+console.log(stateInstance.player)
+
 // class state {
 //   constructor(){
 
@@ -33,7 +35,7 @@ let
 // }
 
 function playerChange() {
-  player = player === "X" ? "O" : "X";
+  stateInstance.player = stateInstance.player === "X" ? "O" : "X";
 }
 
 
@@ -49,7 +51,7 @@ function addCell() {
   newDiv.addEventListener('click', event => {
     const target = event.target;
      let playerLabel = target;
-     playerLabel.textContent = player;
+     playerLabel.textContent = stateInstance.player;
     //  target.appendChild(playerLabel);
     playerChange();
     }, { once: true });
