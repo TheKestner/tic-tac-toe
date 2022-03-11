@@ -4,7 +4,7 @@
 class State {
   constructor() {
     this.player = "X";
-    this.board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
+    this.board = ["", "", "", "", "", "", "", "", ""];
     this.winningStates = [
       // Horizontal
          ['0', '1', '2'],
@@ -44,9 +44,10 @@ function addCell() {
   newDiv.addEventListener('click', event => {
     const target = event.target;
      let playerLabel = target;
-     playerLabel.textContent = stateInstance.player;
-    //  target.appendChild(playerLabel);
-    playerChange();
+     if (playerLabel.textContent == "") {
+      playerLabel.textContent = stateInstance.player;
+      playerChange();
+     }
   });
  }
 }
@@ -55,7 +56,7 @@ function restartGame(){
   stateInstance.player;
   stateInstance.board;
   document.querySelectorAll('.cell')
-    .forEach(cell => cell.innerHTML = " ");
+    .forEach(cell => cell.innerHTML = "");
 }
 
 document.querySelector('.btn').addEventListener('click', restartGame);
