@@ -6,48 +6,26 @@ class State {
     this.player = "X";
     this.board = [" ", " ", " ", " ", " ", " ", " ", " ", " "];
     this.winningStates = [
+      // Horizontal
          ['0', '1', '2'],
          ['3', '4', '5'],
          ['6', '7', '8'],
       
-      //   // Vertical
+      //   Vertical
          ['0', '3', '6'],
          ['1', '4', '7'],
          ['2', '5', '8'],
       
-      //   // Diagonal
+      //   Diagonal
         ['0', '4', '8'],
         ['2', '4', '6']
-         ]
+         ];
   }
 }
 
 let stateInstance = new State();
 
 
-// class state {
-//   constructor(){
-
-//   this.board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]
-//   this.player = "X"
-
-//   // Horizontal
-//   winningStates: [
-//   ['0', '1', '2'],
-//   ['3', '4', '5'],
-//   ['6', '7', '8'],
-
-//   // Vertical
-//   ['0', '3', '6'],
-//   ['1', '4', '7'],
-//   ['2', '5', '8'],
-
-//   // Diagonal
-//   ['0', '4', '8'],
-//   ['2', '4', '6']
-//   ]
-//  }
-// }
 
 function playerChange() {
   stateInstance.player = stateInstance.player === "X" ? "O" : "X";
@@ -72,15 +50,15 @@ function addCell() {
     }, { once: true });
  }
 }
-//document.getElementby 
 
-// document.addEventListener('click', event => {
-//   const target = event.target;
-//    let playerLabel = target;
-//    playerLabel.textContent = player;
-//    target.appendChild(playerLabel);
-// })
+function restartGame(){
+  stateInstance.player;
+  stateInstance.board;
+  document.querySelectorAll('.cell')
+    .forEach(cell => cell.innerHTML = " ");
+}
 
+document.querySelector('.btn').addEventListener('click', restartGame);
 document.body.onload = addCell;
 
 
