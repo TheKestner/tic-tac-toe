@@ -47,10 +47,10 @@ function addCell() {
      playerLabel.textContent = stateInstance.player;
     //  target.appendChild(playerLabel);
     playerChange();
-    }, { once: true });
+  });
  }
 }
-
+//, { once: true }
 function restartGame(){
   stateInstance.player;
   stateInstance.board;
