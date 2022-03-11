@@ -26,6 +26,7 @@ let stateInstance = new State();
 
 function playerChange() {
   stateInstance.player = stateInstance.player === "X" ? "O" : "X";
+  currentPlayer.textContent = `Current Player is ${stateInstance.player}`;
 }
 
 

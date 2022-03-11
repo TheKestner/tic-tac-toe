@@ -19,19 +19,21 @@ class State {
       //   Diagonal
         ['0', '4', '8'],
         ['2', '4', '6']
-         ];
+    ];
   }
 }
 
 let stateInstance = new State();
 
+let currentPlayer = document.getElementById("turn");
 
 
 function playerChange() {
   stateInstance.player = stateInstance.player === "X" ? "O" : "X";
+  currentPlayer.textContent = `Current Player is ${stateInstance.player}`;
 }
 
-
+playerChange();
 
 //added board
 function addCell() {
