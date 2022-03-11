@@ -18,6 +18,14 @@ class State {
         ['2', '4', '6']
     ];
   }
+
+  setPlayer(x) {
+    this.player = x;
+  }
+
+  setBoard(x){
+    this.board = x;
+  }
 }
 
 let stateInstance = new State();
@@ -52,8 +60,8 @@ function addCell() {
 }
 //, { once: true }
 function restartGame(){
-  stateInstance.player;
-  stateInstance.board;
+  stateInstance.setBoard(["", "", "", "", "", "", "", "", ""]);
+  stateInstance.setPlayer('X');
   document.querySelectorAll('.cell')
     .forEach(cell => cell.innerHTML = "");
 }
